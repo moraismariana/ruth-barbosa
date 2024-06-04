@@ -1,0 +1,15 @@
+{% load static %}
+<footer class="footer-bg">
+    <div class="footer w fonte1 container">
+        <div class="footer-parte1">
+            <a href="{% url 'index' %}" class="Ruth Barbosa"><img src="{% static 'imagens/icones/logo.svg' %}" alt=""></a>
+            <p>Desenvolvido por Mariana Morais © 2024</p>
+        </div>
+        <ul class="footer-lista">
+            <li><a href="{% url 'index' %}">Início</a></li>
+            <li><a href="{% url 'index' %}">Sobre</a></li>
+            <li><a href="{% url 'agendamento_1' %}">Agendamento</a></li>
+            <li><a href="{% url 'index' %}">Contato</a></li>
+        </ul>
+    </div>
+</footer>

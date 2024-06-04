@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="header-bg">
+    {% include 'partials/_header.html' %}
+</div>
+
+<div class="agendamento-bg">
+    <section class="agendamento-4 container">
+        <div class="agendamento-info">
+            <h2 class="titulo2 w">Agendamento</h2>
+            <p class="fonte2 w">Marque a sua consulta de forma rápida</p>
+        </div>
+        <form action="{% url 'agendamento_5' %}" class="agendamento-form">
+            <style>
+                .agendamento-form .select {
+                    display: block;
+                    width: 200px;
+                    border: 2px solid var(--c2);
+                    border-radius: 40px;
+                    padding: 14px;
+                    width: 280px;
+                    background: url("{% static 'imagens/icones/seta-para-baixo.svg' %}") no-repeat center right 14px;
+                }
+            </style>
+            <h3 class="titulo3 c9">Deseja confirmar a sua consulta?</h3>
+            <p class="fonte3 c6">11 de junho de 2024 - 10:30 (Facetas)</p>
+            <button class="botao2" name="confirmacao" value="sim">Continuar</button>
+        </form>
+    </section>
+</div>
+
+{% include 'partials/_footer_2.html' %}
+
+{% endblock %}

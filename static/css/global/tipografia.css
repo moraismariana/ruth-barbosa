@@ -1,0 +1,41 @@
+.titulo1 {
+  font-family: Kumbh Sans;
+  font-weight: 400;
+  font-size: 3.75rem;
+  line-height: 4.25rem;
+}
+
+.titulo2 {
+  font-family: Kumbh Sans;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3.125rem;
+}
+
+.titulo3 {
+  font-family: Kumbh Sans;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+
+.fonte1 {
+  font-family: Kumbh Sans;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.fonte2 {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.fonte3 {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}

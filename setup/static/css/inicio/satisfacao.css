@@ -1,0 +1,72 @@
+/* geral */
+
+.satisfacao-bg {
+  background-color: var(--c1);
+}
+
+.satisfacao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  padding: 48px;
+  background-color: var(--w);
+  border-radius: 40px;
+}
+
+/* 1a parte */
+
+.satisfacao-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 2a parte */
+
+.satisfacao-lista-quadrado {
+  background-color: var(--c4);
+  border-radius: 16px;
+  width: 80px;
+  height: 80px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.satisfacao img {
+  border-radius: 36px;
+}
+
+.satisfacao-relativo {
+  position: relative;
+}
+
+.satisfacao-absoluto {
+  position: absolute;
+  bottom: -36px;
+  right: 0px;
+}
+
+.satisfacao-lista {
+  display: flex;
+  gap: 20px;
+}
+
+.li-g {
+  font-family: Kumbh Sans;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+
+.li-p {
+  text-align: center;
+  font-family: Kumbh Sans;
+  font-weight: 400;
+  font-size: 0.85rem;
+  line-height: 1rem;
+  letter-spacing: -0.03em;
+}

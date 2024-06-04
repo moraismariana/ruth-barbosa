@@ -1,0 +1,41 @@
+.avaliacoes-bg {
+  background-color: var(--c1);
+}
+
+.avaliacoes {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.avaliacoes .titulo2 {
+  margin-bottom: 88px;
+}
+
+.avaliacoes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+}
+
+.avaliacoes-quadro {
+  background-color: var(--w);
+  border-radius: 20px;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.avaliacoes img {
+  position: absolute;
+  top: -40px;
+  left: 32px;
+}
+
+.avaliacoes .titulo3 {
+  padding-top: 20px;
+  text-align: end;
+  font-size: 1.375rem;
+  line-height: 1.5rem;
+}

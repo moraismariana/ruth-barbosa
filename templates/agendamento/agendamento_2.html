@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="header-bg">
+    {% include 'partials/_header.html' %}
+</div>
+
+<div class="agendamento-bg">
+    <section class="agendamento container">
+        <div class="agendamento-info">
+            <h2 class="titulo2 w">Agendamento</h2>
+            <p class="fonte2 w">Marque a sua consulta de forma rápida</p>
+        </div>
+        <form action="{% url 'agendamento_3' %}" class="agendamento-form">
+            <style>
+                .agendamento-form .select {
+                    display: block;
+                    width: 200px;
+                    border: 2px solid var(--c2);
+                    border-radius: 40px;
+                    padding: 14px;
+                    width: 280px;
+                    background: url("{% static 'imagens/icones/seta-para-baixo.svg' %}") no-repeat center right 14px;
+                }
+            </style>
+            <label for="data" class="titulo3 c9">Selecione a data</label>
+            <div class="agendamento-select-flex">
+                <select id="mes" name="mes" required class="select">
+                    <option value="" selected disabled hidden>Mês</option>
+                    <option value="Junho">Junho</option>
+                    <option value="Julho">Julho</option>
+                    <option value="Agosto">Agosto</option>
+                    <option value="Setembro">Setembro</option>
+                    <option value="Outubro">Outubro</option>
+                </select>
+                <select id="dia" name="dia" required class="select">
+                    <option value="" selected disabled hidden>Dia</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                </select>
+            </div>
+            <button class="botao2">Continuar</button>
+        </form>
+    </section>
+</div>
+
+{% include 'partials/_footer_2.html' %}
+
+{% endblock %}

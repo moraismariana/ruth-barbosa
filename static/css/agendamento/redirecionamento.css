@@ -1,0 +1,24 @@
+.redirecionamento-bg {
+  position: fixed;
+  background-color: var(--c8);
+  width: 100vw;
+  height: 100vh;
+}
+
+.redirecionamento {
+  background-color: var(--w);
+  border-radius: 40px;
+  max-width: fit-content;
+  margin-top: 360px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.redirecionamento .botao3 {
+  align-self: flex-end;
+}
+
+.redirecionamento .titulo2 {
+  margin-bottom: 28px;
+}

@@ -1,0 +1,30 @@
+.servicos-bg {
+  background-color: var(--c1);
+}
+
+.servicos {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.servicos .titulo2 {
+  margin-bottom: 48px;
+}
+
+.servicos-tipos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+}
+
+.servicos-quadro {
+  background-color: var(--w);
+  border-radius: 20px;
+  padding: 32px;
+}
+
+.servicos-quadro-flex {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}

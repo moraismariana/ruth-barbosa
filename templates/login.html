@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="header-bg">
+    {% include 'partials/_header.html' %}
+</div>
+
+<div class="login-bg">
+    <div class="login container">
+        <section class="login-bemvindo">
+            <style>
+                .login-bemvindo {
+                    background: url("{% static 'imagens/img/login/moço-sorrindo.png' %}");
+                    background-size: cover;
+                    border-radius: 40px 0 0px 40px;
+                    align-content: center;
+                    padding: 48px;
+                }
+            </style>
+            <h2 class="titulo2 w">Bem-vindo!</h2>
+            <p class="fonte2 w">Faça o login com a sua conta <br> ou cadastre-se caso não tenha uma.</p>
+        </section>
+        <form action="{% url 'index' %}" method="POST" class="login-formulario">
+            {% csrf_token %}
+            <h2 class="titulo2 c9">Login</h2>
+            <!-- <input class="login-input" type="email" id="email" name="email" placeholder="Email">
+            <input class="login-input" type="password" id="senha" name="senha" placeholder="Senha"> -->
+            {% for field in form.visible_fields %}
+            {{ field }}
+            {% endfor %}
+            <button type="submit" class="botao2">Login</button>
+            <p class="fonte3 c6">ou</p>
+            <a href="{% url 'cadastro' %}" class="fonte3 c9">cadastre-se</a>
+        </form>
+    </div>
+</div>
+
+{% include 'partials/_footer_2.html' %}
+
+{% endblock %}

@@ -1,0 +1,37 @@
+:root {
+  --w: #ffffff;
+  --c1: #f5f5f5;
+  --c2: #e9e1da;
+  --c3: #afaca9;
+  --c4: #aba095;
+  --c5: #8f837b;
+  --c6: #807874;
+  --c7: #2c2926;
+  --c8: rgba(53, 53, 53, 0.5);
+  --c9: #d4a45a;
+  --c10: #c29550;
+}
+
+.w {
+  color: var(--w);
+}
+
+.c3 {
+  color: var(--c3);
+}
+
+.c6 {
+  color: var(--c6);
+}
+
+.c7 {
+  color: var(--c7);
+}
+
+.c9 {
+  color: var(--c9);
+}
+
+.c10 {
+  color: var(--c10);
+}

@@ -1,0 +1,27 @@
+/* global */
+@import "./css/global/global.css";
+@import "./css/global/cores.css";
+@import "./css/global/tipografia.css";
+@import "./css/global/header.css";
+@import "./css/global/footer.css";
+
+/* página inicial */
+@import "./css/inicio/introducao.css";
+@import "./css/inicio/servicos.css";
+@import "./css/inicio/satisfacao.css";
+@import "./css/inicio/avaliacoes.css";
+@import "./css/inicio/tempo.css";
+@import "./css/inicio/localizacao.css";
+
+/* login */
+@import "./css/login/login.css";
+@import "./css/login/cadastro.css";
+
+/* usuário */
+@import "./css/usuario/usuario.css";
+@import "./css/usuario/cancelamento.css";
+@import "./css/usuario/reagendamento.css";
+
+/* agendamento */
+@import "./css/agendamento/agendamento.css";
+@import "./css/agendamento/redirecionamento.css";

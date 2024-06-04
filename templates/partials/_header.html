@@ -1,0 +1,15 @@
+{% load static %}
+<header class="container w">
+    <a href="{% url 'index' %}">
+        <img src="{% static 'imagens/icones/logo.svg' %}" alt="Ruth Barbosa">
+    </a>
+    <nav aria-label="primaria">
+        <ul class="header-menu">
+            <li><a href="{% url 'index' %}" class="fonte1 header-menu-hover">Início</a></li>
+            <li><a href="{% url 'index' %}" class="fonte1 header-menu-hover">Sobre</a></li>
+            <li><a href="{% url 'agendamento_1' %}" class="fonte1 header-menu-hover">Agendamento</a></li>
+            <li><a href="{% url 'index' %}" class="fonte1 header-menu-hover">Contato</a></li>
+            <li><a href="{% url 'login' %}" class="botao1">Login</a></li>
+        </ul>
+    </nav>
+</header>

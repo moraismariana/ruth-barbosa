@@ -1,0 +1,20 @@
+.localizacao-bg {
+  background-color: var(--c1);
+}
+
+.localizacao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.localizacao .titulo2 {
+  margin-bottom: 20px;
+}
+
+.localizacao img {
+  border-radius: 40px;
+}

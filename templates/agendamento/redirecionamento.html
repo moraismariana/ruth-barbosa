@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruth Barbosa | Agendamento</title>
+    <meta name="description" content="Ruth Barbosa é uma dentista de São Paulo especializada em odontologia estética, endodontia e periodontia. Agende agora a sua consulta através deste site.">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- fontes/tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="redirecionamento-bg">
+        <section class="redirecionamento container">
+            <h2 class="titulo2 c9">Você precisa fazer o login para continuar.</h2>
+            <p class="fonte3 c6">Faça o login com a sua conta ou cadastre-se <br> caso não tenha uma.</p>
+            <a href="../login.html" class="botao3">Fazer o login agora</a>
+        </section>
+    </div>
+
+    <div class="header-bg">
+        <header class="container w">
+            <a href="../">
+                <img src="../img/logo.svg" alt="Ruth Barbosa">
+            </a>
+            <nav aria-label="primaria">
+                <ul class="header-menu">
+                    <li><a href="../" class="fonte1 header-menu-hover">Início</a></li>
+                    <li><a href="../sobre.html" class="fonte1 header-menu-hover">Sobre</a></li>
+                    <li><a href="../agendamento1.html" class="fonte1 header-menu-hover">Agendamento</a></li>
+                    <li><a href="../contato.html" class="fonte1 header-menu-hover">Contato</a></li>
+                    <li><a href="../login.html" class="botao1">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="agendamento-bg">
+        <section class="agendamento container">
+            <div class="agendamento-info">
+                <h2 class="titulo2 w">Agendamento</h2>
+                <p class="fonte2 w">Marque a sua consulta de forma rápida</p>
+            </div>
+            <form action="./agendamento2.html" class="agendamento-form">
+                <label for="servico" class="titulo3 c9">Selecione o serviço</label>
+                <select id="servico" name="servico" required class="select">
+                    <option value="" selected disabled hidden></option>
+                    <option value="Clareamento dental">Clareamento dental</option>
+                    <option value="Facetas">Facetas</option>
+                    <option value="Lentes de contato">Lentes de contato</option>
+                    <option value="Tratamento de canal">Tratamento de canal</option>
+                    <option value="Tratamento de gengiva">Tratamento de gengiva</option>
+                </select>
+                <button class="botao2">Continuar</button>
+            </form>
+        </section>
+    </div>
+
+    <footer class="footer2 fonte1 c3 container">
+        <p>Desenvolvido por Mariana Morais © 2024</p>
+    </footer>
+</body>
+
+</html>

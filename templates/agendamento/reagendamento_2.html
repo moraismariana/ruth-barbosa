@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="reagendamento-bg">
+    <section class="reagendamento container">
+        <form action="{% url 'reagendamento_3' %}" class="reagendamento-form">
+            <style>
+                .reagendamento-form .select {
+                    display: block;
+                    width: 200px;
+                    border: 2px solid var(--c2);
+                    border-radius: 40px;
+                    padding: 14px;
+                    width: 280px;
+                    background: url("{% static 'imagens/icones/seta-para-baixo.svg' %}") no-repeat center right 14px;
+                }
+            </style>
+            <h2 class="titulo2 c9">Remarque a sua consulta</h2>
+            <p class="fonte3 c6">Selecione o horário que melhor te atenda.</p>
+            <div class="agendamento-select-flex">
+                <select id="horario" name="horario" required class="select">
+                    <option value="" selected disabled hidden></option>
+                    <option value="08:30">08:30</option>
+                    <option value="10:30">10:30</option>
+                    <option value="14:00">14:00</option>
+                </select>
+            </div>
+            <div class="cancelamento-botoes">
+                <a href="{% url 'pagina_usuario' %}" class="botao4">Voltar</a>
+                <button class="botao2">Continuar</button>
+            </div>
+        </form>
+    </section>
+</div>
+
+<div class="usuario-bg">
+    <style>
+        .usuario-bg {
+            background: url("{% static 'imagens/img/usuario/usuario-bg.png' %}") no-repeat;
+            background-size: cover;
+            padding-top: 20px;
+        }
+    </style>
+    {% include 'partials/_header.html' %}
+
+    <article class="usuario-intro container w">
+        <h2 class="titulo2">Olá, Mariana!</h2>
+        <p class="titulo3">Aqui você pode verificar, remarcar ou cancelar as suas consultas.</p>
+    </article>
+</div>
+
+<section class="usuario-lista-bg">
+    <ul class="usuario-lista container">
+        <li class="usuario-lista-item">
+            <p class="titulo3 c9">Limpeza dentária</p>
+            <span class="fonte3 c6">16 de abril, 2024 - às 16:00</span>
+            <div class="usuario-lista-item-icones">
+                <a href="{% url 'reagendamento_1' %}"><img src="{% static 'imagens/icones/edit.svg' %}" alt="Editar"></a>
+                <a href="{% url 'cancelamento_1' %}"><img src="{% static 'imagens/icones/lixeira.svg' %}" alt="Deletar"></a>
+            </div>
+        </li>
+        <li class="usuario-lista-item">
+            <p class="titulo3 c9">Limpeza dentária</p>
+            <span class="fonte3 c6">16 de abril, 2024 - às 16:00</span>
+            <div class="usuario-lista-item-icones">
+                <a href="{% url 'reagendamento_1' %}"><img src="{% static 'imagens/icones/edit.svg' %}" alt="Editar"></a>
+                <a href="{% url 'cancelamento_1' %}"><img src="{% static 'imagens/icones/lixeira.svg' %}" alt="Deletar"></a>
+            </div>
+        </li>
+        <li class="usuario-lista-item">
+            <p class="titulo3 c9">Limpeza dentária</p>
+            <span class="fonte3 c6">16 de abril, 2024 - às 16:00</span>
+            <div class="usuario-lista-item-icones">
+                <a href="{% url 'reagendamento_1' %}"><img src="{% static 'imagens/icones/edit.svg' %}" alt="Editar"></a>
+                <a href="{% url 'cancelamento_1' %}"><img src="{% static 'imagens/icones/lixeira.svg' %}" alt="Deletar"></a>
+            </div>
+        </li>
+    </ul>
+</section>
+
+{% include 'partials/_footer_1.html' %}
+
+{% endblock %}

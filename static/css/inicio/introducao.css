@@ -1,0 +1,13 @@
+.introducao-bg {
+  background: url("../../img/inicio/Intro\ -\ 1.png") no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+}
+
+.introducao {
+  padding-top: 320px;
+  padding-bottom: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

@@ -1,0 +1,56 @@
+.login-bg {
+  background: linear-gradient(var(--c4) 440px, var(--c1) 0px);
+}
+
+.login {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-top: 20px;
+  padding-bottom: 72px;
+}
+
+.login-bemvindo {
+  background: url("../../img/login/Moço\ sorrindo.png");
+  background-size: cover;
+  border-radius: 40px 0 0px 40px;
+  align-content: center;
+  padding: 48px;
+}
+
+.login-formulario {
+  background-color: var(--w);
+  padding: 40px;
+  padding-top: 180px;
+  padding-bottom: 180px;
+  border-radius: 0 40px 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.login input {
+  border: 2px solid var(--c2);
+  border-radius: 40px;
+  padding: 14px;
+  width: 280px;
+}
+.login .botao2 {
+  max-width: initial;
+  width: 306px;
+  margin-top: 28px;
+}
+
+.login .titulo2 {
+  margin-bottom: 28px;
+}
+
+.login input::placeholder {
+  font: 400 1.1rem/1.5rem "Kumbh Sans";
+  color: var(--c3);
+}
+
+.login input:focus {
+  outline: none;
+  border: 2px solid var(--c9);
+}

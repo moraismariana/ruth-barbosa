@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="introducao-bg">
+    <style>
+        .introducao-bg {
+            background: url("{% static 'imagens/img/inicio/intro-1.png' %}") no-repeat;
+            background-size: cover;
+            padding-top: 20px;
+        }
+    </style>
+
+    {% include 'partials/_header.html' %}
+
+    <article class="introducao container w">
+        <h1 class="titulo1">Um sorriso no seu rosto.</h1>
+        <p class="fonte2">Agende a sua consulta através<br>do botão abaixo.</p>
+        <a href="{% url 'agendamento_1' %}" class="botao1">Agendar agora</a>
+    </article>
+</div>
+
+<section class="servicos-bg">
+    <div class="servicos container">
+        <h2 class="titulo2 c7">Serviços e especialidades.</h2>
+        <div class="servicos-tipos">
+            <div class="servicos-quadro">
+                <div class="servicos-quadro-flex">
+                    <h3 class="c10 titulo3">Odontologia estética</h3>
+                    <img src="{% static 'imagens/icones/dente.svg' %}" alt="Dente">
+                </div>
+                <p class="c6 fonte3">Melhora a aparência dos dentes, usando técnicas como clareamento dental, facetas e lentes de contato.</p>
+            </div>
+            <div class="servicos-quadro">
+                <div class="servicos-quadro-flex">
+                    <h3 class="c10 titulo3">Endodontia</h3>
+                    <img src="{% static 'imagens/icones/dente.svg' %}" alt="Dente">
+                </div>
+                <p class="c6 fonte3">Especialidade que trata problemas na parte interna dos dentes, incluindo o tratamento de canal.</p>
+            </div>
+            <div class="servicos-quadro">
+                <div class="servicos-quadro-flex">
+                    <h3 class="c10 titulo3">Periodontia</h3>
+                    <img src="{% static 'imagens/icones/dente.svg' %}" alt="Dente">
+                </div>
+                <p class="c6 fonte3">Especialidade focada no diagnóstico, tratamento e prevenção de problemas na gengiva e no periodonto.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="satisfacao-bg">
+    <div class="container">
+        <div class="satisfacao">
+            <div class="satisfacao-info">
+                <h2 class="titulo2 c7">Sua satisfação em <br> primeiro lugar.</h2>
+                <p class="c6 fonte3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <a href="#" class="botao2">Saiba mais</a>
+            </div>
+            <div class="satisfacao-relativo">
+                <img src="{% static 'imagens/img/inicio/pessoas-sorrindo.png' %}" alt="Pessoas sorrindo">
+                <ul class="satisfacao-absoluto satisfacao-lista w">
+                    <li class="satisfacao-lista-quadrado">
+                        <p class="li-g">+1k</p>
+                        <p class="li-p">clientes satisfeitos</p>
+                    </li>
+                    <li class="satisfacao-lista-quadrado">
+                        <p class="li-g">+6</p>
+                        <p class="li-p">anos de experiência</p>
+                    </li>
+                    <li class="satisfacao-lista-quadrado">
+                        <p class="li-g">10</p>
+                        <p class="li-p">anos de formação</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="avaliacoes-bg">
+    <div class="avaliacoes container">
+        <h2 class="titulo2 c7">Avaliações dos nossos clientes.</h2>
+        <div class="avaliacoes-grid">
+            <div class="avaliacoes-quadro">
+                <img src="{% static 'imagens/img/inicio/cliente-1.png' %}" alt="Cliente 1">
+                <p class="c6 fonte3">"Esta foi uma das melhores experiências que eu poderia ter! Agradeço demais à Dra. Ruth pelos resultados incríveis!"</p>
+                <p class="c10 titulo3">Luísa dos Santos</p>
+            </div>
+            <div class="avaliacoes-quadro">
+                <img src="{% static 'imagens/img/inicio/cliente-2.png' %}" alt="Cliente 2">
+                <p class="c6 fonte3">"Vim de outro estado somente para consultar com a Dra. Ruth, pois nenhum outro dentista me passa tanta confiança quanto ela."</p>
+                <p class="c10 titulo3">Paulo Oliveira</p>
+            </div>
+            <div class="avaliacoes-quadro">
+                <img src="{% static 'imagens/img/inicio/cliente-3.png' %}" alt="Cliente 3">
+                <p class="c6 fonte3">"Vim de outro estado somente para consultar com a Dra. Ruth, pois nenhum outro dentista me passa tanta confiança quanto ela."</p>
+                <p class="c10 titulo3">Ana Moreira</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tempo-bg">
+    <div class="container">
+        <div class="tempo w">
+            <style>
+                .tempo {
+                    background: url("{% static 'imagens/img/inicio/tempo-fundo.png' %}");
+                    background-size: cover;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    background-color: var(--c4);
+                    border-radius: 40px;
+                    padding-top: 80px;
+                    padding-bottom: 80px;
+                    padding-left: 48px;
+                    padding-right: 48px;
+                }
+            </style>
+            <h2 class="titulo2">Não perca mais tempo!</h2>
+            <p class="titulo3">Agende a sua consulta ou entre em contato.</p>
+            <div class="tempo-links">
+                <a href="{% url 'agendamento_1' %}" class="botao1">Agendar</a>
+                <a href="#" class="botao1">Contato</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="localizacao-bg">
+    <div class="localizacao container">
+        <img src="{% static 'imagens/img/inicio/localizacao-mapa.png' %}" alt="Mapa Google">
+        <div>
+            <h2 class="titulo2 c7">Localização.</h2>
+            <p class="c6 fonte3">Rua fictícia, 99</p>
+            <p class="c6 fonte3">Bairro fictício - São Paulo - SP</p>
+        </div>
+    </div>
+</section>
+
+{% include 'partials/_footer_1.html' %}
+
+{% endblock %}

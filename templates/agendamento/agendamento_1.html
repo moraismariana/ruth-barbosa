@@ -11,27 +11,16 @@
             <h2 class="titulo2 w">Agendamento</h2>
             <p class="fonte2 w">Marque a sua consulta de forma rápida</p>
         </div>
-        <form action="{% url 'agendamento_2' %}" class="agendamento-form">
-            <style>
-                .agendamento-form .select {
-                    display: block;
-                    width: 200px;
-                    border: 2px solid var(--c2);
-                    border-radius: 40px;
-                    padding: 14px;
-                    width: 280px;
-                    background: url("{% static 'imagens/icones/seta-para-baixo.svg' %}") no-repeat center right 14px;
-                }
-            </style>
-            <label for="servico" class="titulo3 c9">Selecione o serviço</label>
-            <select id="servico" name="servico" required class="select">
-                <option value="" selected disabled hidden></option>
-                <option value="Clareamento dental">Clareamento dental</option>
-                <option value="Facetas">Facetas</option>
-                <option value="Lentes de contato">Lentes de contato</option>
-                <option value="Tratamento de canal">Tratamento de canal</option>
-                <option value="Tratamento de gengiva">Tratamento de gengiva</option>
-            </select>
+        <form action="{% url 'agendamento_1' %}" method="POST" class="agendamento-form">
+            {% csrf_token %}
+            <div class="reagendamento-select-flex">
+                {% for field in form.visible_fields %}
+                <div>
+                    <label for="{{ field.id_for_label }}" class="titulo3 c9">{{ field.label }}</label>
+                    {{ field }}
+                </div>
+                {% endfor %}
+            </div>
             <button class="botao2">Continuar</button>
         </form>
     </section>

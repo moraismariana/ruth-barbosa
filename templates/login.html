@@ -21,7 +21,7 @@
             <h2 class="titulo2 w">Bem-vindo!</h2>
             <p class="fonte2 w">Faça o login com a sua conta <br> ou cadastre-se caso não tenha uma.</p>
         </section>
-        <form action="{% url 'index' %}" method="POST" class="login-formulario">
+        <form action="{% url 'login' %}" method="POST" class="login-formulario">
             {% csrf_token %}
             <h2 class="titulo2 c9">Login</h2>
             <!-- <input class="login-input" type="email" id="email" name="email" placeholder="Email">

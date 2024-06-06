@@ -1,13 +1,13 @@
 from django import forms
 
 class LoginForms(forms.Form):
-    email_login=forms.EmailField(
-        required=True,
+    nome_login=forms.CharField(
+        required=True, 
         max_length=100,
-        widget=forms.EmailInput(
+        widget=forms.TextInput(
             attrs={
-                'class': 'login-input',
-                'placeholder': 'Email',
+                'class': 'cadastro-input',
+                'placeholder': 'Nome',
             }
         )
     )

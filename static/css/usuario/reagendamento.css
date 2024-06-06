@@ -4,12 +4,12 @@
 }
 
 .reagendamento-form .select {
+  margin-top: 12px;
   display: block;
-  width: 200px;
   border: 2px solid var(--c2);
   border-radius: 40px;
   padding: 14px;
-  width: 280px;
+  width: 180px;
   background: url("../../img/icones/seta-para-baixo.svg") no-repeat center right
     14px;
 }
@@ -30,8 +30,8 @@
 .reagendamento {
   background-color: var(--w);
   border-radius: 40px;
-  max-width: 800px;
-  margin-top: 320px;
+  max-width: fit-content;
+  margin-top: 200px;
   padding: 40px;
 
   display: flex;
@@ -47,4 +47,9 @@
 
 .reagendamento .botao4 {
   align-self: flex-end;
+}
+
+.reagendamento-select-flex {
+  display: flex;
+  gap: 20px;
 }

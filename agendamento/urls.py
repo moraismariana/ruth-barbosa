@@ -11,10 +11,10 @@ urlpatterns = [
     path('agendamento/4', agendamento_4, name='agendamento_4'),
     path('agendamento/5', agendamento_5, name='agendamento_5'),
 
-    path('reagendamento/1', reagendamento_1, name='reagendamento_1'),
+    path('reagendamento/1/<int:consulta_id>', reagendamento_1, name='reagendamento_1'),
     path('reagendamento/2', reagendamento_2, name='reagendamento_2'),
     path('reagendamento/3', reagendamento_3, name='reagendamento_3'), 
 
-    path('cancelamento/1', cancelamento_1, name='cancelamento_1'),
+    path('cancelamento/1/<int:consulta_id>', cancelamento_1, name='cancelamento_1'),
     path('cancelamento/2', cancelamento_2, name='cancelamento_2'),
 ]

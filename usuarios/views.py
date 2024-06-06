@@ -1,9 +1,31 @@
 from django.shortcuts import render, redirect
 from usuarios.forms import LoginForms, CadastroForms
 from django.contrib.auth.models import User
+from django.contrib import auth
+from agendamento.models import Consulta
 
 def login(request):
     form = LoginForms()
+
+    if request.method == 'POST':
+        form = LoginForms(request.POST)
+
+        if form.is_valid():
+            nome_login = form['nome_login'].value()
+            senha_login = form['senha_login'].value()
+
+        usuario = auth.authenticate(
+            request,
+            username = nome_login,
+            password = senha_login
+        )
+
+        if usuario is not None:
+            auth.login(request, usuario)
+            return redirect('index')
+        else:
+            return redirect('login')
+
     return render(request, 'login.html', {'form': form})
 
 def cadastro(request):
@@ -36,4 +58,9 @@ def cadastro(request):
     return render(request, 'cadastro.html', {'form': form})
 
 def pagina_usuario(request):
-    return render(request, 'usuario.html')
+    consultas = Consulta.objects.filter(cliente=request.user.id)
+    return render(request, 'usuario.html', {'cards': consultas})
+
+def logout(request):
+    auth.logout(request)
+    return redirect('index')

@@ -9,11 +9,12 @@
             <li><a href="{% url 'index' %}" class="fonte1 header-menu-hover">Sobre</a></li>
             <li><a href="{% url 'agendamento_1' %}" class="fonte1 header-menu-hover">Agendamento</a></li>
             <li><a href="{% url 'index' %}" class="fonte1 header-menu-hover">Contato</a></li>
-            {% if user.is_authenticated %}
-            <li><a href="{% url 'pagina_usuario' %}"><img src="{% static 'imagens/icones/user.svg' %}" alt="Página do usuário"></a></li>
-            {% else %}
-            <li><a href="{% url 'login' %}" class="botao1">Login</a></li>
-            {% endif %}
+            <li>
+                <a href="{% url 'logout' %}" class="fonte1 header-menu-hover header-icones">
+                    <p>Sair</p>
+                    <img src="{% static 'imagens/icones/logout.svg' %}" alt="Sair">
+                </a>
+            </li>
         </ul>
     </nav>
 </header>

@@ -10,7 +10,6 @@
 }
 
 .login-bemvindo {
-  /* background: url("{% static 'imagens/img/login/moço-sorrindo.png' %}"); */
   background: url("../../imagens/img/login/moço-sorrindo.png");
   background-size: cover;
   border-radius: 40px 0 0px 40px;

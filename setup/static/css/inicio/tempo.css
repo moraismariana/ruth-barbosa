@@ -3,7 +3,6 @@
 }
 
 .tempo {
-  /* background: url("{% static 'imagens/img/inicio/tempo-fundo.png' %}"); */
   background: url("../../imagens/img/inicio/tempo-fundo.png");
   background-size: cover;
   display: flex;
